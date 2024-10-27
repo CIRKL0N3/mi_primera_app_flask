@@ -1,3 +1,108 @@
-<h1>Hola mundo</h1>
-<p> Bienvenido a mi primera aplicación de flask, </p>
-<p> durante el desarrollo de la misma nos la pasaremos muy bien. </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi To Do App</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Hace que el contenido esté centrado verticalmente */
+            margin: 0; /* Elimina márgenes del body */
+            text-align: center; /* Centra el texto */
+        }
+
+        .container {
+            text-align: center;
+            margin-bottom: 10%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+
+        <div class="container">
+            <h1>Bienvenido a mi To Do's App</h1>
+            <button type="button" style="border: 1px solid black; padding: 10px; background-color: lightyellow; font-weight: bold; cursor: pointer; border-radius: 15px;">
+                Agregar nuevo pendiente
+            </button>
+        </div>
+
+        <section>
+            <h2>Pendientes</h2>
+            <table border="1" cellpadding="10">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                        <th>Acción</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Acabar Programación Avanzada</td>
+                        <td>Necesito acabar todos los temas</td>
+                        <td><button type="button" style="border: 1px solid black; padding: 10px; background-color: lightyellow; font-weight: bold; cursor: pointer; border-radius: 15px;">
+                            Mover a "En proceso"
+                        </button></td>
+                        <td><button type="button" style="border: 1px solid black; padding: 10px; background-color: lightcoral; font-weight: bold; cursor: pointer; border-radius: 15px;">
+                            Eliminar
+                        </button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>En proceso</h2>
+            <table border="1" cellpadding="10">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                        <th>Acción</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Evaluar a estudiantes</td>
+                        <td>Le están echando ganas</td>
+                        <td><button type="button" style="border: 1px solid black; padding: 10px; background-color: lightgreen; font-weight: bold; cursor: pointer; border-radius: 15px;">
+                            Mover a "Finalizado"
+                        </button></td>
+                        <td><button type="button" style="border: 1px solid black; padding: 10px; background-color: lightcoral; font-weight: bold; cursor: pointer; border-radius: 15px;">
+                            Eliminar
+                        </button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Finalizado</h2>
+            <table border="1" cellpadding="10">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Desayunar</td>
+                        <td>Si tan solo alguien me invitara a desayunar</td>
+                        <td><button type="button" style="border: 1px solid black; padding: 10px; background-color: lightcoral; font-weight: bold; cursor: pointer; border-radius: 15px;">
+                            Eliminar
+                        </button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
